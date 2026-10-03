@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231B365D%22/><text x=%2250%22 y=%2268%22 font-size=%2250%22 font-family=%22Arial, sans-serif%22 font-weight=%22bold%22 fill=%22%23D4AC0D%22 text-anchor=%22middle%22>O</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Omayer — EEE Student & Researcher | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Colors Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        europassPrimary: '#1B365D',
+                        europassSecondary: '#2C3E50',
+                        europassHighlight: '#D4AC0D',
+                        europassBg: '#F8F9FA',
+                        europassCard: '#FFFFFF',
+                        europassBorder: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+            color: #2C3E50;
+        }
+    </style>
+</head>
+<body class="bg-europassBg text-europassSecondary min-h-screen flex flex-col antialiased selection:bg-europassHighlight selection:text-europassPrimary">
+
+    <header class="bg-europassCard border-b border-europassBorder sticky top-0 z-50 shadow-sm">
+        <div class="max-w-5xl 2xl:max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+                <div class="w-8 h-8 rounded bg-europassPrimary text-white flex items-center justify-center font-bold text-sm tracking-wider">
+                    MO
+                </div>
+                <div>
+                    <span class="font-bold text-sm text-europassPrimary block leading-tight">Md Omayer</span>
+                    <span class="text-[10px] text-slate-500 font-medium">Curriculum Vitae & Portfolio</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-5 text-xs font-medium">
+                <a href="#summary" class="hover:text-europassHighlight transition-colors">Summary</a>
+                <a href="#education" class="hover:text-europassHighlight transition-colors">Education</a>
+                <a href="#projects" class="hover:text-europassHighlight transition-colors">Projects</a>
+                <a href="#honors" class="hover:text-europassHighlight transition-colors">Honors & Activities</a>
+                <a href="#contact" class="hover:text-europassHighlight transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <button onclick="window.print()" class="text-xs bg-europassPrimary text-white px-2.5 py-1.5 rounded font-medium hover:bg-slate-800 transition-all flex items-center gap-1 shadow-sm">
+                    <i class="fa-solid fa-print"></i> Print CV
+                </button>
+                <button id="hamburger-btn" class="md:hidden text-europassPrimary hover:text-europassHighlight p-1.5 rounded focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-base"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-europassCard border-b border-europassBorder px-4 py-3 space-y-2 text-xs font-medium">
+            <a href="#summary" class="block py-1 hover:text-europassHighlight transition-colors">Summary</a>
+            <a href="#education" class="block py-1 hover:text-europassHighlight transition-colors">Education</a>
+            <a href="#projects" class="block py-1 hover:text-europassHighlight transition-colors">Projects</a>
+            <a href="#honors" class="block py-1 hover:text-europassHighlight transition-colors">Honors & Activities</a>
+            <a href="#contact" class="block py-1 hover:text-europassHighlight transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl 2xl:max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 space-y-4 sm:space-y-5">
+
+        <!-- 1. PERSONAL INFORMATION SECTION -->
+<section id="personal-info" class="bg-europassCard border border-europassBorder rounded-lg shadow-sm p-4 sm:p-6">
+    <div class="border-b border-europassBorder pb-4 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        
+        <!-- Left Side: Image + Details Side-by-Side -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            <!-- Square Photo -->
+            <div class="shrink-0">
+                <img 
+                    src="path_to_your_photo.jpg" 
+                    alt="Md Omayer" 
+                    class="w-28 h-28 md:w-32 md:h-32 rounded-lg object-cover border-4 border-white shadow-md ring-2 ring-europassBorder block"
+                />
+            </div>
+            
+            <!-- Text Content -->
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-europassPrimary tracking-tight">Md Omayer</h1>
+                <p class="text-base font-medium text-europassSecondary mt-0.5">EEE Student & Researcher</p>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 flex items-center gap-1.5 flex-wrap">
+                    <i class="fa-solid fa-university text-europassPrimary"></i>
+                    <span>Department of Electrical and Electronic Engineering, University of Rajshahi</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Links Box -->
+        <div class="flex flex-col gap-1.5 bg-europassBg p-3 rounded border border-europassBorder text-xs w-full md:w-auto shrink-0">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Contact Links</span>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-1.5">
+                <a href="mailto:omayer@example.com" class="flex items-center gap-1.5 text-europassPrimary hover:text-europassHighlight transition-colors font-medium">
+                    <i class="fa-solid fa-envelope w-3.5"></i> Email
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-europassPrimary hover:text-europassHighlight transition-colors font-medium">
+                    <i class="fa-brands fa-linkedin w-3.5"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-europassPrimary hover:text-europassHighlight transition-colors font-medium">
+                    <i class="fa-brands fa-github w-3.5"></i> GitHub
+                </a>
+                <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-europassPrimary hover:text-europassHighlight transition-colors font-medium">
+                    <i class="fa-solid fa-graduation-cap w-3.5"></i> Scholar
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- 2. PROFESSIONAL SUMMARY SECTION -->
+        <section id="summary" class="bg-europassCard border border-europassBorder rounded-lg shadow-sm p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 border-b border-europassBorder pb-3 mb-3">
+                <div class="w-7 h-7 rounded bg-europassPrimary text-white flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h2 class="text-base sm:text-lg font-bold text-europassPrimary">2. Professional Summary</h2>
+            </div>
+            <p class="text-slate-700 leading-relaxed text-justify text-xs sm:text-sm">
+                Undergraduate student in Electrical and Electronic Engineering at the University of Rajshahi, focusing on academic rigor, technical leadership, and engineering research. Committed to leveraging strong theoretical foundations in EEE alongside technical skills in web development, AI, and systems design.
+            </p>
+        </section>
+
+        <!-- 3. EDUCATION & TRAINING SECTION -->
+        <section id="education" class="bg-europassCard border border-europassBorder rounded-lg shadow-sm p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 border-b border-europassBorder pb-3 mb-4">
+                <div class="w-7 h-7 rounded bg-europassPrimary text-white flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h2 class="text-base sm:text-lg font-bold text-europassPrimary">3. Education & Training</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- Degree Entry -->
+                <div class="border-l-2 border-europassHighlight pl-3 py-0.5">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-0.5">
+                        <h3 class="font-bold text-sm sm:text-base text-europassPrimary">B.Sc. in Electrical and Electronic Engineering (EEE)</h3>
+                        <span class="text-[10px] sm:text-xs font-semibold bg-europassBg text-europassSecondary px-2 py-0.5 rounded border border-europassBorder w-fit">University of Rajshahi</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Focus: Academic rigor, technical leadership, and core electrical engineering principles.</p>
+                </div>
+
+                <!-- Specialized Training Sub-section -->
+                <div class="pt-3 border-t border-slate-100">
+                    <h4 class="font-bold text-[11px] uppercase tracking-wider text-slate-500 mb-3">Specialized Training & Professional Development</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="bg-europassBg p-3 rounded border border-europassBorder flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] text-europassHighlight font-bold block mb-0.5">PROGRAMMING HERO</span>
+                                <h5 class="font-bold text-xs text-europassPrimary">Next Level Web Development</h5>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-2">Advanced web architectures and practical development pipelines.</p>
+                        </div>
+                        <div class="bg-europassBg p-3 rounded border border-europassBorder flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] text-europassHighlight font-bold block mb-0.5">PHITRON</span>
+                                <h5 class="font-bold text-xs text-europassPrimary">Computer Science, Competitive Programming & AI</h5>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-2">Algorithmic problem solving, data structures, and AI foundations.</p>
+                        </div>
+                        <div class="bg-europassBg p-3 rounded border border-europassBorder flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] text-europassHighlight font-bold block mb-0.5">ICT DIVISION</span>
+                                <h5 class="font-bold text-xs text-europassPrimary">Digital Leadership Academy Training Program</h5>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-2">Leadership development and digital ecosystem strategy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROJECTS & TECHNICAL WORKS SECTION -->
+        <section id="projects" class="bg-europassCard border border-europassBorder rounded-lg shadow-sm p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 border-b border-europassBorder pb-3 mb-4">
+                <div class="w-7 h-7 rounded bg-europassPrimary text-white flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h2 class="text-base sm:text-lg font-bold text-europassPrimary">4. Projects & Technical Works</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Project 1 -->
+                <div class="bg-europassBg p-4 rounded-lg border border-europassBorder hover:shadow-sm transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-[10px] font-semibold px-2 py-0.5 bg-blue-100 text-europassPrimary rounded">Mobile Application</span>
+                            <span class="text-[10px] text-slate-400 font-mono">Deployment</span>
+                        </div>
+                        <h3 class="font-bold text-sm text-europassPrimary mb-1">Thunderbolt 09-EEE Mobile Application</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Developed and managed a complete web-to-app deployment project utilizing Median.co for seamless multi-platform delivery.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-europassBorder flex items-center gap-1.5 text-[11px] text-slate-500 font-medium">
+                        <i class="fa-solid fa-tools text-europassHighlight"></i> Median.co · Web-to-App Pipeline
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-europassBg p-4 rounded-lg border border-europassBorder hover:shadow-sm transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-[10px] font-semibold px-2 py-0.5 bg-purple-100 text-purple-800 rounded">Web & AI Integration</span>
+                            <span class="text-[10px] text-slate-400 font-mono">Full-Stack</span>
+                        </div>
+                        <h3 class="font-bold text-sm text-europassPrimary mb-1">Web Development & AI Integrations</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Built various technical applications and maintained an active focus on implementing modern AI services and platforms into real-world user workflows.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2.5 border-t border-europassBorder flex items-center gap-1.5 text-[11px] text-slate-500 font-medium">
+                        <i class="fa-solid fa-brain text-europassHighlight"></i> AI Services · Modern Web Frameworks
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HONORS, AWARDS & ACTIVITIES SECTION -->
+        <section id="honors" class="bg-europassCard border border-europassBorder rounded-lg shadow-sm p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 border-b border-europassBorder pb-3 mb-4">
+                <div class="w-7 h-7 rounded bg-europassPrimary text-white flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h2 class="text-base sm:text-lg font-bold text-europassPrimary">5. Honors, Awards & Activities</h2>
+            </div>
+
+            <div class="space-y-3">
+                <h3 class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Competitions & Leadership</h3>
+                <div class="space-y-2.5">
+                    <div class="flex items-start gap-2.5 p-2.5 rounded bg-europassBg border border-europassBorder">
+                        <div class="text-europassHighlight mt-0.5 text-xs"><i class="fa-solid fa-trophy"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-xs sm:text-sm text-europassPrimary">Team Leader and Participant</h4>
+                            <p class="text-[11px] sm:text-xs text-slate-600">Business Case Competition segment in Bio-Xin Presents National Talent Fest 2025 (UNYSA Bangladesh, Rajshahi Division).</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2.5 p-2.5 rounded bg-europassBg border border-europassBorder">
+                        <div class="text-europassHighlight mt-0.5 text-xs"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-xs sm:text-sm text-europassPrimary">Participant</h4>
+                            <p class="text-[11px] sm:text-xs text-slate-600">Career Day 2025 at Rajshahi University.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2.5 p-2.5 rounded bg-europassBg border border-europassBorder">
+                        <div class="text-europassHighlight mt-0.5 text-xs"><i class="fa-solid fa-hands-helping"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-xs sm:text-sm text-europassPrimary">Volunteer Applicant</h4>
+                            <p class="text-[11px] sm:text-xs text-slate-600">Call for Volunteer 6.0, IEEE University of Rajshahi Student Branch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PERSONAL SKILLS & STYLING SPECIFICATIONS SUMMARY -->
+        <section id="contact" class="bg-europassCard border border-europassBorder rounded-lg shadow-sm p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 border-b border-europassBorder pb-3 mb-4">
+                <div class="w-7 h-7 rounded bg-europassPrimary text-white flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <h2 class="text-base sm:text-lg font-bold text-europassPrimary">6. Personal Skills & Styling Standards</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
+                <div class="space-y-2">
+                    <h3 class="font-bold text-europassPrimary border-b pb-1 text-xs uppercase tracking-wider text-slate-500">Design & Layout System</h3>
+                    <p class="leading-relaxed text-xs">Europass Standard Structure adapted for web portfolios, emphasizing clean readability, modular blocks, and a structured layout ideal for academic and technical evaluations.</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="font-bold text-europassPrimary border-b pb-1 text-xs uppercase tracking-wider text-slate-500">Color Palette Specifications</h3>
+                    <ul class="space-y-1 font-mono text-[11px]">
+                        <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#1B365D] inline-block"></span> Primary: Deep Navy Blue (#1B365D)</li>
+                        <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#2C3E50] inline-block"></span> Secondary: Slate Gray (#2C3E50)</li>
+                        <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#D4AC0D] inline-block"></span> Highlight: Muted Gold (#D4AC0D)</li>
+                        <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#F8F9FA] border inline-block"></span> Background: Off-White (#F8F9FA)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-europassPrimary text-white py-6 mt-8 border-t border-slate-800 text-xs">
+        <div class="max-w-5xl 2xl:max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <div>
+                <p class="font-bold text-sm">Md Omayer</p>
+                <p class="text-[11px] text-slate-300 mt-0.5">Department of Electrical and Electronic Engineering, University of Rajshahi</p>
+            </div>
+            <div class="text-[11px] text-slate-300">
+                &copy; 2026 Md Omayer. All rights reserved. Designed with Europass web standards.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
